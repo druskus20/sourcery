@@ -27,7 +27,7 @@ if vim.g.onedark_override ~= nil then
   end
 end
 
-local bg1 = colors.black
+local bg1 = nil
 local fg1 = colors.white
 
 local red = colors.red
@@ -52,7 +52,7 @@ if bg == nil then
 end
 
 
--- Set the terminal colors
+-- set the terminal colors
 vim.g.terminal_color_0 = black
 vim.g.terminal_color_1 = red
 vim.g.terminal_color_2 = green
