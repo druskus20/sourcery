@@ -11,7 +11,7 @@ local colors = {
   purple   =  "#e1bee9",
   cyan     =  "#c7ebe6",
   white    =  "#bbbbcb",
-  gray     =  "#4c4f55",
+  gray     =  "#FFF",
 
 
   light_black    =  "#2e2e3f",
