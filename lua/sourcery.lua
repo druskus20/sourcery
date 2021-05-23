@@ -2,16 +2,30 @@ local lush = require('lush')
 local hsl = lush.hsl
 ----------------------------------COLOR PALETTE---------------------------------
 local colors = {
-  -- dark palette
-  red = "#e06c75",
-  green = "#98C379",
-  yellow = "#ecbf6f",
-  blue = "#61afef",
-  purple = "#c678dd",
-  cyan = "#56b6c2",
-  white = "#abb2bf",
-  black = "#1E1E1E",
-  gray = "#4c4f55",
+
+  black    =  "#29283c",
+  red      =  "#eca8a8",
+  green    =  "#ccd389",
+  yellow   =  "#efd5a0",
+  blue     =  "#a5c6e1",
+  purple   =  "#e1bee9",
+  cyan     =  "#c7ebe6",
+  white    =  "#bbbbcb",
+  gray     =  "#4c4f55",
+
+
+  light_black    =  "#2e2e3f",
+  light_red      =  "#ffc4c4",
+  light_green    =  "#eff6ab",
+  light_yellow   =  "#ffe6b5",
+  light_blue     =  "#c9e6fd",
+  light_purple   =  "#f7d7ff",
+  light_cyan     =  "#ddfcf8",
+  light_white    =  "#e1e1ef",
+  light_gray     =  "#5B5F66",
+
+
+
   comment_gray = "#7e848f",
   selection_gray = "#3e4452",
   indentline_gray = "#3a4049",
@@ -28,7 +42,7 @@ if vim.g.onedark_override ~= nil then
 end
 
 local bg1 = nil
-local fg1 = colors.white
+local fg1 = "#bfbfcb"
 
 local red = colors.red
 local green = colors.green
@@ -61,14 +75,14 @@ vim.g.terminal_color_4 = blue
 vim.g.terminal_color_5 = purple
 vim.g.terminal_color_6 = cyan
 vim.g.terminal_color_7 = gray
-vim.g.terminal_color_8 = comment_gray
-vim.g.terminal_color_9 = red
-vim.g.terminal_color_10 = green
-vim.g.terminal_color_11 = yellow
-vim.g.terminal_color_12 = blue
-vim.g.terminal_color_13 = purple
-vim.g.terminal_color_14 = cyan
-vim.g.terminal_color_15 = white
+vim.g.terminal_color_8 = light_black
+vim.g.terminal_color_9 = light_red
+vim.g.terminal_color_10 = light_green
+vim.g.terminal_color_11 = light_yellow
+vim.g.terminal_color_12 = light_blue
+vim.g.terminal_color_13 = light_purple
+vim.g.terminal_color_14 = light_cyan
+vim.g.terminal_color_15 = light_white
 vim.g.terminal_color_background = bg1
 vim.g.terminal_color_foreground = fg1
 
