@@ -243,6 +243,12 @@ local theme = lush(function()
     LspReferenceRead {LspReferenceText}, -- used for highlighting "read" references
     LspReferenceWrite {LspReferenceText}, -- used for highlighting "write" references
 
+    -- https://github.com/folke/todo-comments.nvim/commit/6570fd271d17fec1966522f3a19cc6f4c88824c4
+    DiagnosticError {LspDiagnosticsDefaultError},
+    DiagnosticWarn {LspDiagnosticsDefaultWarning},
+    DiagnosticInfo {LspDiagnosticsDefaultInformation},
+    DiagnosticHint {LspDiagnosticsDefaultHint},
+
     -- Tree Sitter
     TSError {fg = red}, -- For syntax/parser errors.
     TSPunctDelimiter     {fg = fg1}, -- For delimiters ie: `.`
